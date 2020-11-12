@@ -1,4 +1,3 @@
 #!/bin/sh
-set -e
 
-java -jar structurizr-cli.jar $*
+sh -c "java -jar structurizr-cli.jar $*"

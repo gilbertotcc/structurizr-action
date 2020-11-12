@@ -1,9 +1,12 @@
 name: 'Structurizr'
 description: 'Use Structurizr CLI'
+
 inputs:
   args:
     description: 'Arguments for Structurizr CLI'
     required: true
+    default: ''
+
 runs:
   using: 'docker'
   image: 'Dockerfile'

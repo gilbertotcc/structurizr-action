@@ -1,17 +1,17 @@
-# Structurizr Action
+# Structurizr action
 
-TODO A detailed description of what the action does
+Check DSL workspace defined using Structurizr DSL.
 
-## Usage
+## Inputs
 
-TODO Required input and output arguments
+### `workspace`
 
-TODO Optional input and output arguments
+**Required** Path or URL to the workspace JSON file/DSL file(s).
 
-TODO Secrets the action uses
+## Example usage
 
-TODO Environment variables the action uses
-
-## Example
-
-An example of how to use your action in a workflow
+```yaml
+uses: gilbertotcc/structurizr-action
+with:
+  workspace: '.'
+```

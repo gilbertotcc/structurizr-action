@@ -1,12 +1,11 @@
 name: 'Structurizr'
-description: 'Check DSL workspace defined using Structurizr DSL'
+description: 'Use Structurizr CLI'
 inputs:
-  workspace:
-    description: 'Path or URL to the workspace JSON file/DSL file(s)'
+  args:
+    description: 'Arguments for Structurizr CLI'
     required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - '-workspace ${{ inputs.workspace }}'
-    - '-format json'
+    - ${{ inputs.args }}

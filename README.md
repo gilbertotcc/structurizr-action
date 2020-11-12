@@ -15,5 +15,5 @@ Use Structurizr CLI.
 ```yaml
 uses: gilbertotcc/structurizr-action@...
 with:
-  args: '-workspace . -format json'
+  args: 'export -workspace . -format json'
 ```

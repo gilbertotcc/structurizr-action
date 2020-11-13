@@ -1,23 +1,27 @@
 # Structurizr action
 
-*Rudimentary* (aka experimental) GitHub action that allows the use of
-[Structurizr CLI](https://github.com/structurizr/cli) in GitHub workflows.
+*Rudimentary*, *aka* experimental, GitHub action *[that works]* to use the
+[Structurizr CLI](https://github.com/structurizr/cli) in workflows.
 
 ## Inputs
+
+The action is basic and, as inputs, accepts only a single parameter with the
+arguments that must be passed to the Structurizr CLI.
 
 ### `args`
 
 **Required** Arguments for Structurizr CLI.
-
-### Outputs
-
-The GitHub action is *WIP*.
-More improvements will arrive as I or code contributors will work on them.
+See the [Structurizr CLI Usage](https://github.com/structurizr/cli#usage) for
+further details.
 
 ## Example usage
 
+In order to use this action in a GitHub workflow, you must add a step like the
+one listed herein, customazing `name` and `args` according to your needs:
+
 ```yaml
-uses: gilbertotcc/structurizr-action@main
-with:
-  args: 'export -workspace . -format json'
+- name: Export Structurizr workspace
+  uses: gilbertotcc/structurizr-action@v1
+  with:
+    args: 'export -workspace ./ -format json'
 ```

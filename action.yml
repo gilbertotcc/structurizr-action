@@ -1,5 +1,6 @@
-name: 'Structurizr'
-description: 'Use Structurizr CLI'
+name: 'Structurizr CLI'
+description: >
+  Call Structurizr CLI with the arguments passed as inputs to the action.
 
 inputs:
   args:

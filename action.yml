@@ -10,6 +10,6 @@ inputs:
 
 runs:
   using: 'docker'
-  image: 'docker://gilbertotcc/structurizr:v1.9.0'
+  image: 'docker://gilbertotcc/structurizr:v1.16.0'
   args:
     - ${{ inputs.args }}
